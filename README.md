@@ -1,4 +1,4 @@
-## OSquery-Extension
+## BroEye
 
 This module has been tested with 
 linux: CENTOS7 (3.10.0-229.11.1.el7.x86_64)
