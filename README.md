@@ -74,7 +74,7 @@ Note: actor framework version should be the same at both sides (bro and
        osquery side)
 
 ----------------------------------------------
-###Step 3: Start Using Monitoring Application###
+### Step 3: Start Using Monitoring Application
 ----------------------------------------------
 At bro-master:
 Add bro/osquery to your BROPATH and then just run
