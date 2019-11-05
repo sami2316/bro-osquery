@@ -1,4 +1,4 @@
-## OSquery-Extension ##
+## OSquery-Extension
 
 This module has been tested with 
 linux: CENTOS7 (3.10.0-229.11.1.el7.x86_64)
@@ -7,7 +7,7 @@ Note: actor framework version should be the same at both sides (bro and osquery 
 
 
 -------------------------------------------------------
-###Step 1: Follow Osquery Extension Guidelines###
+### Step 1: Follow Osquery Extension Guideline
 -------------------------------------------------------
 We have developed osquery extension which will enable bro users to subscribe to 
 SQL queries remotely at osquery daemons within a subnet and then get the queries updates till the
@@ -20,7 +20,7 @@ Bro user can subscribe and unsubscribe SQL queries at any time during execution.
 Broker is a communication library which is used as a communication module 
 between osquery extension and bro IDS.
 
-####1.1 Pre-Installation requirements: ####
+#### 1.1 Pre-Installation requirements:
 
 Here follows the list of libraries requied to build extension
 - broker 
@@ -38,21 +38,21 @@ Broker link:
 ```git clone --recursive https://github.com/bro/broker```
 
 The rest of libraries will be readily available with the working osquery install. Clone the latest osquery from here: 
-https://github.com/facebook/osquery/ 
+`https://github.com/facebook/osquery/`
 
-####1.2 Installation Steps: ####
+#### 1.2 Installation Steps:
 
 * ```git clone https://github.com/sami2316/OSquery-Extension.git```
 *	```cd OSquery-Extension```
 *	```make```
 *	```make install```
 
-####1.3 Application usage guide:####
+#### 1.3 Application usage guide:
 * Change master IP and update interval (default value is 250 msec) var/osquery/broker.ini
 *	```osqueryd --extensions_autoload=/etc/osquery/extensions.load ```
 
 -------------------------------------------------				
-###Step 2: Follow Bro Extension Guideline###
+### Step 2: Follow Bro Extension Guideline
 -------------------------------------------------
 
 We have added osquery query subscription module using broker functionality in 
